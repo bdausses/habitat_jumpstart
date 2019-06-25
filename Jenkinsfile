@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'hab --version'
+        sh 'hab studio build'
       }
     }
   }
