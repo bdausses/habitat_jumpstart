@@ -13,7 +13,7 @@ pipeline {
    }
    stage('build') {
      steps {
-       habitat task: 'build', directory: '.', origin: "${env.HAB_ORIGIN}", docker: true
+       habitat task: 'build', directory: '.', origin: "${env.HAB_ORIGIN}"
      }
    }
    stage('upload') {
